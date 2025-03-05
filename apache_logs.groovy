@@ -5,6 +5,7 @@ pipeline {
         string(name: 'http', defaultValue:'', description: 'Ingresa la respuesta HTTP:')
             }
         }
+        stages {
         stage('Ejecutar comandos') {
             steps {
                 echo 'obteniendo url...'
@@ -22,3 +23,4 @@ pipeline {
                 }
             }
         }
+    }
